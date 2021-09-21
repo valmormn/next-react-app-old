@@ -6,7 +6,8 @@
     "dev": "next dev -H 192.168.0.123 -p 1313",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "eslint": "eslint"
   },
   "dependencies": {
     "next": "11.1.2",
@@ -19,8 +20,11 @@
     "@typescript-eslint/parser": "^4.31.1",
     "eslint": "^7.32.0",
     "eslint-config-next": "11.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.25.1",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "2.4.1",
     "typescript": "4.4.3"
   }
 }
