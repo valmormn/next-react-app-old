@@ -6,8 +6,17 @@
     "dev": "next dev -H 192.168.0.123 -p 1313",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "eslint": "eslint"
+    "nxlint": "next lint",
+    "lint": "eslint src --max-warnings=0",
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*": ["yarn lint --fix"]
   },
   "dependencies": {
     "next": "11.1.2",
@@ -24,6 +33,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.25.1",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^11.1.2",
     "prettier": "2.4.1",
     "typescript": "4.4.3"
   }
