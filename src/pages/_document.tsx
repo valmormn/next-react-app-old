@@ -38,7 +38,17 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="pt-BR">
-        <Head />
+        <Head>
+          {/* 
+            Fonts must be declared within _document.tsx
+            https://nextjs.org/docs/messages/no-page-custom-font
+          */}
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=optional"
+          />
+        </Head>
+
         <body>
           <Main />
           <NextScript />
