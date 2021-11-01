@@ -37,7 +37,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="pt-BR">
+      <Html lang="pt-BR" data-theme="">
         <Head>
           {/* 
             Fonts must be declared within _document.tsx

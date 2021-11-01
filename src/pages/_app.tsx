@@ -1,8 +1,12 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 
+import Layout from '@/components/layout'
+
+// Styles
 import GlobalStyled from 'styles/global'
 //import '../styles/globals.css'
+import 'tailwindcss/tailwind.css'
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -98,7 +102,9 @@ function App({ Component, pageProps }: AppProps) {
         */}
       </Head>
       <GlobalStyled />
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   )
 }

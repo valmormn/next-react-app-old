@@ -3,7 +3,16 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-//const foo = 'buzz'
+//const hi = async () => {
+//  const res = await fetch('/api/hello')
+//  const data = await res.json()
+//  console.log(data)
+//  return data
+//}
+//
+//const wtf = hi()
+//
+//console.log(wtf)
 
 const Home: NextPage = () => {
   return (
