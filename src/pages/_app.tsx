@@ -1,6 +1,9 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 
+import { DefaultSeo } from 'next-seo'
+import SEO from '../../next-seo.config'
+
 import Layout from '@/components/layout'
 
 // Styles
@@ -12,7 +15,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>React Advanced - Boilerplate</title>
+        <title>Next Boilerplate</title>
 
         <meta name="application-name" content="PWA App" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -101,6 +104,7 @@ function App({ Component, pageProps }: AppProps) {
         -->
         */}
       </Head>
+      <DefaultSeo {...SEO} />
       <GlobalStyled />
       <Layout>
         <Component {...pageProps} />

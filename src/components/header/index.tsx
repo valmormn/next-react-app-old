@@ -1,5 +1,5 @@
 // import React, { ReactNode } from 'react'
-// import Link from 'next/link'
+import Link from 'next/link'
 // import { useRouter } from 'next/router'
 
 // import Image from 'next/image'
@@ -31,7 +31,27 @@ const Header = () => {
   return (
     <>
       <header className={navbarClass}>
-        <p>header</p>
+        <Link href="/">
+          <a>
+            {/* <HomeSvgIcon height={26} width={26} /> */}
+            logo
+          </a>
+        </Link>
+        <button className="btn btn-link w-8">
+          {/* <span className"w-8">🧔</span> */}
+        </button>
+
+        <Link href="/auth">
+          <a>
+            <button className="btn btn-link">🧔</button>
+          </a>
+        </Link>
+
+        <Link href="/about">
+          <a>
+            <button className="btn btn-link">🧔</button>
+          </a>
+        </Link>
       </header>
     </>
   )
